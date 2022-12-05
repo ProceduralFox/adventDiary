@@ -1,16 +1,15 @@
 import Router, { useRouter } from 'next/router'
-import React from 'react'
+import React, { useEffect } from 'react'
+import Runner from '../../../../components/runner'
 
 type Props = {}
 
 
+
 const Run = (props: Props) => {
 
-  const router = useRouter()
-
-  const { day: selectedDay, year:selectedYear } = router.query
   return (
-    <div>We are running</div>
+    <Runner></Runner>
   )
 }
 

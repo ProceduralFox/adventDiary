@@ -43,6 +43,8 @@ const Header = (props: Props) => {
             return <span key={day}>{day}</span>
           })
         }
+        <Link key={"thisIsStillUnique"} href={`/${selectedYear}/${selectedDay}/run`}>Run this ~~</Link>
+        <Link key={"thisIsStillUnique"} href={`/${selectedYear}/${selectedDay}`}>@@ Go back</Link>
       </div>
     </div>
   )
