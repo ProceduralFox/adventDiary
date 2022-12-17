@@ -18,12 +18,14 @@ const Runner = (props: Props) => {
     const fetchFile = async () => {
       const response = await fetch(`../../inputs/${selectedYear}_${selectedDay}_1.txt`)
       const text = await response.text()
-
+      // console.log(text)
       const newSolution: {first:string, second: string} = {first: "", second: ""}
 
       newSolution.first = solutionsDirectory[selectedYear][selectedDay]?.first(text)
       newSolution.second = solutionsDirectory[selectedYear][selectedDay]?.second(text)
       
+      // console.log("testing")
+
       setSolution(newSolution)
 
     }
