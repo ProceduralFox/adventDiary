@@ -14,28 +14,20 @@ const Runner = (props: Props) => {
 
   const [solution, setSolution] = useState<{first:string, second: string}>()
 
-  useEffect(()=>{
-    const fetchFile = async () => {
-      const response = await fetch(`../../inputs/${selectedYear}_${selectedDay}_1.txt`)
-      const text = await response.text()
-      // console.log(text)
-      const newSolution: {first:string, second: string} = {first: "", second: ""}
-
-      newSolution.first = solutionsDirectory[selectedYear][selectedDay]?.first(text)
-      newSolution.second = solutionsDirectory[selectedYear][selectedDay]?.second(text)
-      
-      // console.log("testing")
-
-      setSolution(newSolution)
-
-    }
-
+  const handleInput = (selectedYear: Years, selectedDay: Days, input:string)=>{
     if(!selectedDay || !selectedYear){
       return
     }
 
-    fetchFile()
-  }, [selectedDay, selectedYear])
+    const newSolution: {first:string, second: string} = {first: "", second: ""}
+
+    newSolution.first = solutionsDirectory[selectedYear][selectedDay]?.first(input)
+    newSolution.second = solutionsDirectory[selectedYear][selectedDay]?.second(input)
+    
+    // console.log("testing")
+
+    setSolution(newSolution)
+  }
 
   return (
     <div>
@@ -48,6 +40,15 @@ const Runner = (props: Props) => {
       </div>
       <div>
         Run on your own input? Could be cool idk.
+        <input type="file" onChange={async (e)=>{
+          console.log(e.target.files)
+          if(e.target.files?.length===0 || !e.target.files){
+            setSolution({first:"",second:""})
+            return
+          }
+          const text = await e.target.files[0].text()
+          handleInput(selectedYear, selectedDay, text)
+        }} />
       </div>
     </div>
   )

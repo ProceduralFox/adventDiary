@@ -22,6 +22,10 @@ const codeSnippets: {[key in Years]:{[key in Days]:{first: string, second: strin
     "4": {
       first: DAY4FIRST2022,
       second: DAY4SECOND2022
+    },
+    "5": {
+      first: "",
+      second: ""
     }
   }
 }
