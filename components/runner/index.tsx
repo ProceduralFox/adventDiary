@@ -41,7 +41,6 @@ const Runner = (props: Props) => {
       <div>
         Run on your own input? Could be cool idk.
         <input type="file" onChange={async (e)=>{
-          console.log(e.target.files)
           if(e.target.files?.length===0 || !e.target.files){
             setSolution({first:"",second:""})
             return

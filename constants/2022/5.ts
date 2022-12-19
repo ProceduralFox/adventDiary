@@ -1,4 +1,4 @@
-export const Day5First2022 = (input:string)=>{
+export const DAY5FIRST2022 = `const solution = (input:string)=>{
   let stacksLineLength = 0
   let lineCounting = true
   let numberOfStacks = 0
@@ -89,8 +89,10 @@ export const Day5First2022 = (input:string)=>{
 
   return answer
 }
+`
 
-export const Day5Second2022 = (input:string)=>{
+
+export const DAY5SECOND2022 = `const solution = (input:string)=>{
   let stacksLineLength = 0
   let lineCounting = true
   let numberOfStacks = 0
@@ -177,4 +179,4 @@ export const Day5Second2022 = (input:string)=>{
   })
 
   return answer
-}
+}`
