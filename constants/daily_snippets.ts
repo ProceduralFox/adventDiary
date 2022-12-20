@@ -5,6 +5,8 @@ import { DAY3FIRST2022, DAY3SECOND2022 } from "./2022/3";
 import { DAY4FIRST2022, DAY4SECOND2022 } from "./2022/4";
 import { DAY5FIRST2022, DAY5SECOND2022 } from "./2022/5";
 import { DAY6FIRST2022, DAY6SECOND2022 } from "./2022/6";
+import { DAY8FIRST2022, DAY8SECOND2022 } from "./2022/8";
+import { DAY7FIRST2022, DAY7SECOND2022 } from "./2022/7";
 
 
 const codeSnippets: {[key in Years]:{[key in Days]:{first: string, second: string}}} = {
@@ -34,8 +36,12 @@ const codeSnippets: {[key in Years]:{[key in Days]:{first: string, second: strin
       second: DAY6SECOND2022
     },
     "7": {
-      first: " ",
-      second: " "
+      first: DAY7FIRST2022,
+      second: DAY7SECOND2022
+    },
+    "8": {
+      first: DAY8FIRST2022,
+      second: DAY8SECOND2022
     }
   }
 }
