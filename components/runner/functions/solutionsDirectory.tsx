@@ -4,14 +4,15 @@ import { Day3First2022, Day3Second2022 } from "./2022/3"
 import { Day4First2022, Day4Second2022 } from "./2022/4"
 import { Day5First2022, Day5Second2022 } from "./2022/5"
 import { Day6First2022, Day6Second2022} from "./2022/6"
+import { Day7First2022, Day7Second2022 } from "./2022/7"
 
 export type Years = "2022"
 
-export type Days = "1" | "2" | "3" | "4" | "5" | "6"
+export type Days = "1" | "2" | "3" | "4" | "5" | "6" | "7"
 
 export const YEARS_ENUM = new Set(["2022"])
 
-export const DAYS_ENUM = new Set(["1", "2", "3", "4", "5", "6"])
+export const DAYS_ENUM = new Set(["1", "2", "3", "4", "5", "6", "7"])
 
 
 const solutionsDirectory: {[key in Years]: {[key in Days]?: {first: Function, second: Function}}} = {
@@ -39,6 +40,10 @@ const solutionsDirectory: {[key in Years]: {[key in Days]?: {first: Function, se
     "6": {
       first: Day6First2022,
       second: Day6Second2022
+    },
+    "7": {
+      first: Day7First2022,
+      second: Day7Second2022
     }
   }
 }
