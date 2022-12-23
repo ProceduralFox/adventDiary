@@ -38,6 +38,7 @@ export const Day10First2022 = (input:string) => {
 
 export const Day10Second2022 = (input:string) => {
   const lines = input.split(String.fromCharCode(10))
+  // TODO : this is off by one line but otherwise correct
 
   let cycle = 0
   let value = 1
@@ -50,8 +51,6 @@ export const Day10Second2022 = (input:string) => {
     const spritePosition = new Set([spriteCenter-1, spriteCenter, spriteCenter+1])
 
     const render = spritePosition.has(rowPixel)
-    
-    console.log("monitor rednering pixel at", cycle, rowPixel)
 
     monitor[monitor.length-1].push(render?`#`:".")
     if((cycle-1)%40===0 && cycle!==1) monitor.push([])
@@ -85,7 +84,6 @@ export const Day10Second2022 = (input:string) => {
   monitor.forEach((row)=>{
     console.log(row.toString())
   })
-  console.log("total cycles", cycle)
   console.log(monitor)
-  return monitor
+  return "Check console"
 }

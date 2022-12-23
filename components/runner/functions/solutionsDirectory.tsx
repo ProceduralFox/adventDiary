@@ -11,11 +11,15 @@ import { Day9First2022, Day9Second2022 } from "./2022/9"
 
 export type Years = "2022"
 
-export type Days = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10"
+export type Days = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | 
+"11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20" | 
+"21" | "22" | "23" | "24" | "25"
 
 export const YEARS_ENUM = new Set(["2022"])
 
-export const DAYS_ENUM = new Set(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"])
+export const DAYS_ENUM = new Set(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", 
+"11", "12", "13", "14", "15", "16", "17", "18", "19", "20", 
+"21", "22", "23", "24", "25"])
 
 
 const solutionsDirectory: {[key in Years]: {[key in Days]?: {first: Function, second: Function}}} = {
@@ -59,7 +63,67 @@ const solutionsDirectory: {[key in Years]: {[key in Days]?: {first: Function, se
     "10": {
       first: Day10First2022,
       second: Day10Second2022
-    }
+    },
+    "11": {
+      first: ()=>"placeholder",
+      second: ()=>"placeholder",
+    },
+    "12": {
+      first: ()=>"placeholder",
+      second: ()=>"placeholder"
+    },
+    "13": {
+      first: ()=>"placeholder",
+      second: ()=>"placeholder"
+    },
+    "14": {
+      first: ()=>"placeholder",
+      second: ()=>"placeholder"
+    },
+    "15": {
+      first: ()=>"placeholder",
+      second: ()=>"placeholder"
+    },
+    "16": {
+      first: ()=>"placeholder",
+      second: ()=>"placeholder"
+    },
+    "17": {
+      first: ()=>"placeholder",
+      second: ()=>"placeholder"
+    },
+    "18": {
+      first: ()=>"placeholder",
+      second: ()=>"placeholder"
+    },
+    "19": {
+      first: ()=>"placeholder",
+      second: ()=>"placeholder",
+    },
+    "20": {
+      first: ()=>"placeholder",
+      second: ()=>"placeholder"
+    },
+    "21": {
+      first: ()=>"placeholder",
+      second: ()=>"placeholder",
+    },
+    "22": {
+      first: ()=>"placeholder",
+      second: ()=>"placeholder"
+    },
+    "23": {
+      first: ()=>"placeholder",
+      second: ()=>"placeholder"
+    },
+    "24": {
+      first: ()=>"placeholder",
+      second: ()=>"placeholder"
+    },
+    "25": {
+      first: ()=>"placeholder",
+      second: ()=>"placeholder"
+    },
   }
 }
 

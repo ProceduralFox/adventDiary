@@ -52,7 +52,67 @@ const codeSnippets: {[key in Years]:{[key in Days]:{first: string, second: strin
     "10": {
       first: DAY10FIRST2022,
       second: DAY10SECOND2022
-    }
+    },
+    "11": {
+      first: ``,
+      second: ``,
+    },
+    "12": {
+      first: ``,
+      second: ``
+    },
+    "13": {
+      first: ``,
+      second: ``
+    },
+    "14": {
+      first: ``,
+      second: ``
+    },
+    "15": {
+      first: ``,
+      second: ``
+    },
+    "16": {
+      first: ``,
+      second: ``
+    },
+    "17": {
+      first: ``,
+      second: ``
+    },
+    "18": {
+      first: ``,
+      second: ``
+    },
+    "19": {
+      first: ``,
+      second: ``,
+    },
+    "20": {
+      first: ``,
+      second: ``
+    },
+    "21": {
+      first: ``,
+      second: ``,
+    },
+    "22": {
+      first: ``,
+      second: ``
+    },
+    "23": {
+      first: ``,
+      second: ``
+    },
+    "24": {
+      first: ``,
+      second: ``
+    },
+    "25": {
+      first: ``,
+      second: ``
+    },
   }
 }
 
