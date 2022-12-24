@@ -1,5 +1,6 @@
 import { Day1First2022, Day1Second2022 } from "./2022/1"
 import { Day10First2022, Day10Second2022 } from "./2022/10"
+import { Day11First2022, Day11Second2022 } from "./2022/11"
 import { Day2First2022, Day2Second2022 } from "./2022/2"
 import { Day3First2022, Day3Second2022 } from "./2022/3"
 import { Day4First2022, Day4Second2022 } from "./2022/4"
@@ -65,8 +66,8 @@ const solutionsDirectory: {[key in Years]: {[key in Days]?: {first: Function, se
       second: Day10Second2022
     },
     "11": {
-      first: ()=>"placeholder",
-      second: ()=>"placeholder",
+      first: Day11First2022,
+      second: Day11Second2022,
     },
     "12": {
       first: ()=>"placeholder",
